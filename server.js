@@ -15,7 +15,7 @@ const WEATHER_API_KEY = process.env.WEATHER_API_KEY;
 const WEATHER_API_URL = "https://api.openweathermap.org/data/2.5/weather";
 
 // Route to get weather data by city
-app.get("/weather?city=", async (req, res) => {
+app.get("/weather", async (req, res) => {
   const { city } = req.query;
 
   if (!city) {
